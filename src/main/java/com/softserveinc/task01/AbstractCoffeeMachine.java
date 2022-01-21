@@ -18,10 +18,12 @@ public abstract class AbstractCoffeeMachine {
     }
 
     public void addWater(int water) {
+
         this.water = Math.min(water + this.water, waterReservoirCapacity);
     }
 
     public void addCoffeeBeans(int coffee) {
+
         this.coffee = Math.min(coffee + this.coffee, coffeeBeanStorageCapacity);
     }
 
